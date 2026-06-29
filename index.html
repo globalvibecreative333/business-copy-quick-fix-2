@@ -283,17 +283,22 @@
   .reveal.d4{animation-delay:.46s}
   .receipt{animation:tilt 1s cubic-bezier(.2,.7,.1,1) .25s both}
 
-  /* ============ UPSELL TO $300 WALKTHROUGH ============ */
-  .upsell-inline{
-    display:inline-flex;align-items:center;gap:11px;margin-top:24px;
-    font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;
-    color:var(--rust-deep);text-decoration:none;border-bottom:1px solid rgba(125,47,28,.4);
-    padding-bottom:4px;transition:color .18s ease, border-color .18s ease;
+  /* ============ UPSELL TAB TO WALKTHROUGH ============ */
+  .upsell-tab{
+    display:inline-flex;align-items:center;gap:16px;margin-top:34px;
+    background:var(--paper-deep);border:1px solid var(--ink);padding:15px 22px 14px;
+    text-decoration:none;color:var(--ink);box-shadow:5px 5px 0 0 var(--ink);
+    transition:transform .18s ease, box-shadow .18s ease;
   }
-  .upsell-inline b{font-weight:700;color:var(--rust);letter-spacing:.04em}
-  .upsell-inline .ar{font-size:13px;transition:transform .18s ease}
-  .upsell-inline:hover{color:var(--rust);border-color:var(--rust)}
-  .upsell-inline:hover .ar{transform:translateX(3px)}
+  .upsell-tab .lbl-mono{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--rust-deep);border-right:1px solid var(--ink);padding-right:16px;
+  }
+  .upsell-tab .txt{font-family:var(--display);font-size:23px;line-height:1;letter-spacing:-.005em}
+  .upsell-tab .txt b{font-style:italic;font-weight:400;color:var(--rust-deep)}
+  .upsell-tab .ar{font-family:var(--mono);font-size:17px;color:var(--rust);transition:transform .18s ease}
+  .upsell-tab:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 0 var(--rust)}
+  .upsell-tab:hover .ar{transform:translateX(3px)}
 
   .bridge{
     margin:48px 0 0;padding:24px 26px;border:1px dashed var(--rust-deep);background:var(--paper-deep);
@@ -369,8 +374,10 @@ src="https://www.facebook.com/tr?id=610416309164215&ev=PageView&noscript=1"/></n
         No live call required.
       </p>
 
-      <a class="upsell-inline reveal d3" href="https://globalvibecreative333.github.io/ai-task-walkthrough/">
-        <span class="ar">→</span> Want more than a rewrite? See the <b>$300 AI Task Walkthrough</b>
+      <a class="upsell-tab reveal d3" href="https://globalvibecreative333.github.io/ai-task-walkthrough/">
+        <span class="lbl-mono">Want more?</span>
+        <span class="txt">See the <b>AI Task Walkthrough</b></span>
+        <span class="ar">→</span>
       </a>
     </div>
 
@@ -461,10 +468,10 @@ src="https://www.facebook.com/tr?id=610416309164215&ev=PageView&noscript=1"/></n
     </div>
   </section>
 
-  <!-- BRIDGE TO $300 WALKTHROUGH -->
+  <!-- BRIDGE TO WALKTHROUGH -->
   <aside class="bridge">
     <span class="pin">Want more?</span>
-    <p>Need me to <em>do the task with you</em>, not just rewrite a draft? The <a href="https://globalvibecreative333.github.io/ai-task-walkthrough/">$300 AI Task Walkthrough</a> is a custom screen-share video plus the prompts to repeat it yourself.</p>
+    <p>Need me to <em>do the task with you</em>, not just rewrite a draft? The <a href="https://globalvibecreative333.github.io/ai-task-walkthrough/">AI Task Walkthrough</a> is a custom screen-share video plus the prompts to repeat it yourself.</p>
   </aside>
 
   <!-- HOW IT WORKS -->
