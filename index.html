@@ -283,6 +283,34 @@
   .reveal.d4{animation-delay:.46s}
   .receipt{animation:tilt 1s cubic-bezier(.2,.7,.1,1) .25s both}
 
+  /* ============ UPSELL TO $300 WALKTHROUGH ============ */
+  .upsell-inline{
+    display:inline-flex;align-items:center;gap:11px;margin-top:24px;
+    font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--rust-deep);text-decoration:none;border-bottom:1px solid rgba(125,47,28,.4);
+    padding-bottom:4px;transition:color .18s ease, border-color .18s ease;
+  }
+  .upsell-inline b{font-weight:700;color:var(--rust);letter-spacing:.04em}
+  .upsell-inline .ar{font-size:13px;transition:transform .18s ease}
+  .upsell-inline:hover{color:var(--rust);border-color:var(--rust)}
+  .upsell-inline:hover .ar{transform:translateX(3px)}
+
+  .bridge{
+    margin:48px 0 0;padding:24px 26px;border:1px dashed var(--rust-deep);background:var(--paper-deep);
+    display:flex;align-items:center;gap:18px;
+  }
+  .bridge .pin{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--paper);background:var(--rust-deep);padding:6px 10px;flex-shrink:0;
+  }
+  .bridge p{font-family:var(--display);font-style:italic;font-size:21px;color:var(--ink);line-height:1.32}
+  .bridge p em{color:var(--rust-deep)}
+  .bridge p a{
+    font-style:normal;color:var(--rust-deep);text-decoration:underline;
+    text-decoration-color:rgba(125,47,28,.5);text-underline-offset:3px;
+  }
+  .bridge p a:hover{color:var(--rust)}
+
   /* ============ RESPONSIVE ============ */
   @media (max-width: 980px){
     .wrap{padding:24px 22px 80px}
@@ -340,6 +368,10 @@ src="https://www.facebook.com/tr?id=610416309164215&ev=PageView&noscript=1"/></n
         A written rewrite of one piece of your business copy for <em>$150,</em> flat.
         No live call required.
       </p>
+
+      <a class="upsell-inline reveal d3" href="https://globalvibecreative333.github.io/ai-task-walkthrough/">
+        <span class="ar">→</span> Want more than a rewrite? See the <b>$300 AI Task Walkthrough</b>
+      </a>
     </div>
 
     <!-- RECEIPT CARD -->
@@ -428,6 +460,12 @@ src="https://www.facebook.com/tr?id=610416309164215&ev=PageView&noscript=1"/></n
       </div>
     </div>
   </section>
+
+  <!-- BRIDGE TO $300 WALKTHROUGH -->
+  <aside class="bridge">
+    <span class="pin">Want more?</span>
+    <p>Need me to <em>do the task with you</em>, not just rewrite a draft? The <a href="https://globalvibecreative333.github.io/ai-task-walkthrough/">$300 AI Task Walkthrough</a> is a custom screen-share video plus the prompts to repeat it yourself.</p>
+  </aside>
 
   <!-- HOW IT WORKS -->
   <div class="section-rule">
